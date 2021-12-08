@@ -1,10 +1,258 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
     <title>Group 9 Senior Design</title>
 </head>
 <body>
-    <h1>Group 9</h1>
+    <nav class="navbar navbar-light" style="background-color:  pink;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Group 9</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#project-overview">Project Overview</a></li>
+            <li><a href="#weekly-reports">Weekly Reports</a></li>
+            <li><a href="#more">Reports & Presentations</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- HOME -->
+      <div id="Home">
+        <h1>Premature Infant Movement Analyzer</h1>
+        <h3>Group 9</h3>
+        <h3>BME 401 2021-2022</h3>
+        <h3>Carley DeGennaro, Julia Miller, Gillian Saperstein</h3>
+      </div>
+
+      <!-- MEET THE TEAM -->
+      <div id="team">
+          <h2>Meet the Team</h2>
+          <p>We are three seniors at Washington University in St. Louis majoring in Biomedical Engineering.
+              This project will serve as our capstone design project for BME401.</p>
+        <div class="col-sm-4">
+            <div class="card">
+                <img clss="card-img-top" src="julia.jpeg">
+                <div class="card-body">
+                    <h5 class="card-title">Julia Miller <a href="https://www.linkedin.com/in/julia-r-miller/" class="card-link">LinkedIn</a></h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Software development co-lead</li>
+                        <li class="list-group-item">Develop and monitor project timeline</li>
+                        <li class="list-group-item">Ensure deadlines are set and met</li>
+                        <li class="list-group-item">Verification and validation presentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img clss="card-img-top" src="julia.jpeg">
+                <div class="card-body">
+                    <h5 class="card-title">Julia Miller <a href="#" class="card-link">LinkedIn</a></h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Software development co-lead</li>
+                        <li class="list-group-item">Develop and monitor project timeline</li>
+                        <li class="list-group-item">Ensure deadlines are set and met</li>
+                        <li class="list-group-item">Verification and validation presentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div><div class="col-sm-4">
+            <div class="card">
+                <img clss="card-img-top" src="julia.jpeg">
+                <div class="card-body">
+                   <h5 class="card-title">Julia Miller <a href="#" class="card-link">LinkedIn</a></h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Software development co-lead</li>
+                        <li class="list-group-item">Develop and monitor project timeline</li>
+                        <li class="list-group-item">Ensure deadlines are set and met</li>
+                        <li class="list-group-item">Verification and validation presentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT OVERVIEW -->
+    <div id="project-overview">
+        <h1>Project Overview</h1>
+        <div id="need-statement">
+            <h2>Need Statement</h2>
+            <p>Researchers working to minimize developmental issues in premature babies caused by stress, resulting from an isolated, noisy environment, are in need of a small, lightweight device to be used in a study that measures limb movements indicative of stress to determine if listening to recordings of a mother’s voice reduces stress and improves the medical outcomes of the child.
+            </p>
+        </div>
+        <div id="project-scope">
+            <h2>Project Scope</h2>
+            <p>Our client requested a device that will measure the movements of incubated premature infants. This device will be used in a study that attempts to reduce stress levels by playing recordings of the infant’s mother’s voice. When the infants feel stress, they move more and burn calories, which is dangerous for premature infants of that size. The physiological impact of stress can also lead to developmental issues as the baby grows. Existing solutions are too large to be worn by a premature infant or not accurate enough for a scientific study. The device must be safe for a premature baby without hindering its movements, while being sensitive enough to accurately detect those movements. In April, we will be delivering a device prototype with accompanying software, circuit diagrams, and mechanical drawings to Dr. Bozzette.</p>
+        </div>
+        <div>
+            <h2>Design Specifications</h2>
+            <table class="table table-bordered table-hover">
+                <tbody>
+                  <tr>
+                    <td>Weight</td>
+                    <td>Any component physically attached to the baby must weigh less than 1oz (28 g)</td>
+                  </tr>
+                  <tr>
+                    <td>Compact</td>
+                    <td>Will fit on baby and inside of incubator (70 cm x 50 cm x 40 cm)</td>
+                  </tr>
+                  <tr>
+                    <td>Sanitizable</td>
+                    <td>Can be sprayed with disinfectant (70% ethanol) or washed or washed in a washing machine if fabric-based
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Reusable and Consistant</td>
+                    <td>Will work the same way every time for a range of movements and infant sizes over multiple trials
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Durable</td>
+                    <td>Can be used for 30-40 trials; will not break if exposed to standard baby movements (for example, hitting the bottom of the incubator or if the baby puts it into his or her mouth)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Safe</td>
+                    <td>Exterior of the device is smooth, durable, and non-toxic</td>
+                  </tr>
+                  <tr>
+                    <td>Stress</td>
+                    <td>Does not add to the patient's stress</td>
+                  </tr>
+                  <tr>
+                    <td>Interference</td>
+                    <td>Does not interfere with hardware/software of the other medical devices in the room</td>
+                  </tr>
+                  <tr>
+                    <td>Safe</td>
+                    <td>Exterior of the device is smooth, durable, and non-toxic</td>
+                  </tr>
+                  <tr>
+                    <td>Easily Operable</td>
+                    <td>Can operate independently once turned on; fast and easy for a nurse to set up
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Distance</td>
+                    <td>Records each time the infant’s limb changes direction and moves more than 3 cm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Duration</td>
+                    <td>Records movements that last longer than 25ms
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Velocity</td>
+                    <td>Records movements between 2 cm/s and 120 cm/s
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Acceleration</td>
+                    <td>Records accelerations between 3070 cm/s^2 and 6580 cm/s^2
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sampling Frequency</td>
+                    <td>Minimum 50 Hz (20 ms/sample)</td>
+                  </tr>
+                  <tr>
+                    <td>Accuracy of Measurements</td>
+                    <td>TBD</td>
+                  </tr>
+                  <tr>
+                    <td>Continuously Operable</td>
+                    <td>3 hours of continuous use</td>
+                  </tr>
+                  <tr>
+                    <td>Accessibility of Data</td>
+                    <td>Data is downloadable </td>
+                  </tr>
+                  <tr>
+                    <td>Budget</td>
+                    <td>Maximum materials cost of $250</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        
+    </div>
+
+    <!-- WEEKLY REPORTS -->
+    <div id="weekly-reports" class="container">
+        <h2>Weekly Reports</h2>           
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Report</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Week 3</td>
+              <td>We have agreed to work with Dr. Bozzette on a device for measuring limb movements in premature infants. We completed our project scope, including a need statement, scope, and design specifications. Finally, we created our web page.</td>
+            </tr>
+            <tr>
+              <td>Week 4</td>
+              <td>We met with Dr. Bozzette to discuss design specifications. She sent us some information to influence our design, including photos of premature babies and a growth chart. We are re-working the project scope and beginning to work on the preliminary report.</td>
+            </tr>
+            <tr>
+                <td>Week 5</td>
+                <td>This week, we received and implemented feedback on our project scope, including updating the need statement to clarify the goal of the project, as well as a complete overhaul of the design specifications to be less solution-oriented. We used our usual meeting time to outline responsibilities for completing the preliminary report. We also researched background information and existing solutions to complete the report. Lastly, we created a tentative timeline for project development.</td>
+            </tr>
+            <tr>
+                <td>Week 6</td>
+                <td>On Monday 10/4, Gillian presented the preliminary report to the class. We met the following day to go over the project timeline in preparation for the progress report, and we made sure LabArchive was up to date and organized in preparation for the upcoming notebook check.</td>
+            </tr>
+            <tr>
+                <td>Week 7</td>
+                <td>We did not meet this week due to fall break. In the meantime, Gillian completed the website, and we started individually brainstorming potential solutions in preparation for a group brainstorming session.</td>
+            </tr>
+            <tr>
+                <td>Week 8</td>
+                <td>At our group meeting, we reviewed feedback from the preliminary report. We continued to brainstorm potential solutions and set a timeline to ensure we are working towards completing the progress report on time. We agreed to finish brainstorming potential solutions by next week.</td>
+            </tr>
+            <tr>
+                <td>Week 9</td>
+                <td>This week, we discussed potential solutions. We further discussed our design specifications and considered how the potential solutions aligned with them in preparation for making our Pugh chart. </td>
+            </tr>
+            <tr>
+                <td>Week 10</td>
+                <td>This week, we had two team meetings. The first was dedicated to going over feedback of our LabArchive notebook and subsequently adding to and organizing the LabArchive notebook. In the second meeting, we wrote down a list of potential ideas and reviewed the schedule for the rest of the semester to ensure we are on track. </td>
+            </tr>
+            <tr>
+                <td>Week 11</td>
+                <td>This week, we first met to further brainstorm potential solutions. We discussed the pros and cons of each, and how well they fit the design specs. We met another time to determine the weight criteria for each design spec to start making the Pugh Chart.</td>
+            </tr>
+            <tr>
+                <td>Week 12</td>
+                <td>This week, we met with Professor Klaesner to discuss how to rate potential solutions regarding each design spec and how to weight each design spec. Following this meeting, we continued rating potential solutions to build our Pugh chart. We also discussed our schedule for the next week to make sure enough work is completed over Thanksgiving, and we started planning our Progress Report. Lastly, we emailed with our client, Dr. Bozette, to better understand the environment the premature infants are in so that we can determine which potential solutions will be best.</td>
+            </tr>
+            <tr>
+                <td>Week 13</td>
+                <td>We met as a group to finalize our Pugh chart and emailed Professor Klaesner to ask for feedback. We each individually worked on the Progress Report and delegated sections for each member to work on. We plan to meet tomorrow to check-in on report progress.</td>
+            </tr>
+            <tr>
+                <td>Week 14</td>
+                <td>This week, we met several times to work on the Progress Report. We finalized the Pugh Chart and list of potential solutions, and did market research to fully explore and understand each design. While finalizing the Pugh Chart, we continued to discuss, clarify, and update our design specifications. In addition, we researched and discussed our chosen solution. We planned the budget and developed a high-level schematic to start the design process. The completed report was submitted to Canvas on time.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    <div id="more">
+        <h2>Preliminary Presentation</h2>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTykMyVd1iFVPn9aLqlOlYCnXZghjb4ABVs69H-DEpcfHPvvuAytoxjx2_b513MQC3cY6GGYFglIF0w/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <h2>Progress Presentation</h2>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRadXFOpnFMWIA_j9XtIlFmFqLNWSXYBdzY0MnAa492KRFM9BcDVX_vGqmsVupIQCPTBUgYtO1VmH6X/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
 </body>
 </html>
