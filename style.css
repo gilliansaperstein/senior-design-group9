@@ -6,8 +6,8 @@ body {
 }
 nav {
     background-color: rgb(255, 192, 203, 0.8);
-    position: fixed;
 }
+
 #Home {
     text-align: center;
     background-color: rgb(134, 183, 247);
@@ -49,6 +49,10 @@ nav {
 
 #team img {
     border-radius: 50%;
+}
+
+a {
+    z-index: 999999;
 }
 
 #project-overview {
@@ -111,6 +115,13 @@ nav {
 
 #weekly-reports tr:hover {
     background-color: rgb(134, 183, 247, 0.8);
+}
+
+.week-col {
+    width: 10%;
+}
+#weekly-reports p, #weekly-reports th {
+    text-align: center;
 }
 
 #more {
