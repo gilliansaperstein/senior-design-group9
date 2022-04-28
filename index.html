@@ -103,7 +103,8 @@
                   </tr>
                   <tr>
                     <td>Compact</td>
-                    <td>Will fit on baby and inside of incubator (70 cm x 50 cm x 40 cm)</td>
+                    <td>	
+                      The shape and volume of the device does not impede the movements of the baby</td>
                   </tr>
                   <tr>
                     <td>Sanitizable</td>
@@ -117,7 +118,7 @@
                   </tr>
                   <tr>
                     <td>Durable</td>
-                    <td>Can be used for 30-40 trials; will not break if exposed to standard baby movements (for example, hitting the bottom of the incubator or if the baby puts it into his or her mouth)
+                    <td>Can be used for 30-40 trials
                     </td>
                   </tr>
                   <tr>
@@ -142,23 +143,22 @@
                     </td>
                   </tr>
                   <tr>
+                    <td>Fluid Resistant</td>
+                    <td>Device is resistant to dripping fluids; classified as IPX2 (Ingress Protection Code)</td>
+                  </tr>
+                  <tr>
                     <td>Distance</td>
-                    <td>Records each time the infant’s limb changes direction and moves more than 3 cm
+                    <td>Records each time the infant’s limb changes direction and moves more than 2 cm
                     </td>
                   </tr>
                   <tr>
                     <td>Duration</td>
-                    <td>Records movements that last longer than 25ms
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Velocity</td>
-                    <td>Records movements between 2 cm/s and 120 cm/s
+                    <td>Records movements that last longer than 500ms
                     </td>
                   </tr>
                   <tr>
                     <td>Acceleration</td>
-                    <td>Records accelerations between 3070 cm/s^2 and 6580 cm/s^2
+                    <td>Records accelerations between 2.5 cm/s^2 and 400 cm/s^2
                     </td>
                   </tr>
                   <tr>
@@ -166,8 +166,8 @@
                     <td>Minimum 50 Hz (20 ms/sample)</td>
                   </tr>
                   <tr>
-                    <td>Accuracy of Measurements</td>
-                    <td>TBD</td>
+                    <td>Precision</td>
+                    <td>The device should count movements with at least 95% accuracy when compared to a manual observer.</td>
                   </tr>
                   <tr>
                     <td>Continuously Operable</td>
@@ -176,6 +176,10 @@
                   <tr>
                     <td>Accessibility of Data</td>
                     <td>Data is downloadable </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>Website can collect data from 5 meters away and with a plastic barrier between the device and the computer</td>
                   </tr>
                   <tr>
                     <td>Budget</td>
@@ -312,6 +316,26 @@
             <p>(3/5 - 3/11)</p></td>
           <td>This week, we focused on planning ahead for the rest of the semester. Our biggest priority is developing the software needed for the device to function, so Gillian will take the prototype with her over spring break to work on it. We also brainstormed ways to improve our device; we decided to reprint the case housing the accelerometer to make it smaller, more lightweight, and circular. We will also attempt to make the device wireless using the transmitter. Lastly, Julia presented our V&V report to the class this week as well.</td>
         </tr>
+        <tr>
+          <td><p>25</p>
+            <p>(3/5 - 3/11)</p></td>
+          <td>This week, we continued to refine our prototype. We designed and 3D printed a new circular case that was smaller and had rounded edges, and we determined that we needed to make the diameter 1 mm bigger and increase the height of the case to make the prototype fit. These updates have been made and the updated plans have been sent for printing. We also worked on the software, and tried to figure out the best way to stream the data to make the important information most accessible to the nurses. This is something we will continue to work on next week, but we discussed different programming languages and importing the raw data into a csv file. Lastly, we discussed some design competitions to enter our prototype in, like the DEBUT competition.</td>
+        </tr>
+        <tr>
+          <td><p>26</p>
+            <p>(3/5 - 3/11)</p></td>
+          <td>While we had to cancel one of our meetings due to multiple team members being sick, we were still able to meet later on in the week. On Monday, a new print of the case was picked up. It's height and diameter seemed to fit the accelerometer, however, the hole for the wires was placed incorrectly and the bottom was broken/contained gaps (possibly due to trying to make the edge more rounded). We made improvements to our design and sent the next (and hopefully final) version of our case to be printed. We also worked on the software component of the device. Our current approach is to use the Pythagorean theorem to get a singular, timestamped value that represents the acceleration measured in each of the three directions. We will then use that to count movements. We also discussed other approaches, such as calculating the velocity based on time and acceleration values, or creating a "score" based off of the average value of acceleration recorded that can be used to compare between the control and experimental group.</td>
+        </tr>
+        <tr>
+          <td><p>27</p>
+            <p>(3/5 - 3/11)</p></td>
+          <td>This week, we met several times to continue working on the prototype. We upgraded the wristband design by using two strips of velcro stuck back-to-back, which made the connection to the case more secure and the size more adjustable. We also finalized our case for the accelerometer to make it as small as possible while still fitting the hardware. Lastly, we continued developing the software. We are able to get raw data and are trying to determine the best way to count movements. We tried using the acceleration values to calculate velocity in addition to trying to determine movements from the acceleration values. To interface with the nurses best, we are looking into an interactive website that would be able to capture and analyze data while giving instructions to the nurses.</td>
+        </tr>
+        <tr>
+          <td><p>28</p>
+            <p>(3/5 - 3/11)</p></td>
+          <td>This week, we are finishing the final touches on our prototype and we are continuing to do our verification. We met with one of the web development professors on Thursday to see whether we could create a live website for our device. Additionally, we bought a replacement microcontroller because we have been borrowing one for all of our research up until now. It has a bluetooth component, which we will try to integrate into our design if time permits, but otherwise the prototype is complete. We will be meeting this weekend to finish up final testing and start writing the final report.</td>
+        </tr>
           </tbody>
         </table>
       </div>
@@ -324,7 +348,9 @@
         <h2>Progress Presentation</h2>
         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRadXFOpnFMWIA_j9XtIlFmFqLNWSXYBdzY0MnAa492KRFM9BcDVX_vGqmsVupIQCPTBUgYtO1VmH6X/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         <h2>Verification and Validation Presentation</h2>
-        
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRgu4B3Wc8oISwJbG_KhAJ84GVMRm5t3NInEnVOr4WctSnQgDc9cnH6eUrPHq3nQVh-26vMmq-k9YHh/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <h2>Final Presentation</h2>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vREm3bgcooW5tKyLeMDlIC0AhbRUpYcP9epmPgs8zUsPHcH1n9EwwJK9ycLdgFbKf07ZCVTHjz1kSj-/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
 </body>
 </html>
